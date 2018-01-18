@@ -1,0 +1,31 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": {{ .Site.Title | jsonify }},
+    "home_page_url": {{ .Site.BaseURL | jsonify}},
+    "feed_url": {{ .Permalink | jsonify }},
+    "icon": "{{ .Site.BaseURL }}icon440.png",
+    "favicon": "{{ .Site.BaseURL }}icon72.png",
+    {{- if isset .Site.Params "description" }}
+    "description": "{{ .Site.Params.description }}",
+    {{- end }}
+    {{- if isset .Site.Params "author" }}
+    "author": { "name": "{{ .Site.Params.author | jsonify }}" },
+    {{- end }}
+    "items": [
+    {{- range $i, $e := first 10 (where .Site.Pages "Type" "in" (slice "article" "micro" "review" "link" )) }}
+        {{- if $i }}, {{ end }}
+            {
+            	{{- if isset .Params "title" }}
+                "title": {{ .Title | jsonify }},
+                {{- end }}
+                "date_published": {{ .Date.Format "2006-02-01T15:04:05-07:00" | jsonify }},
+                {{- if isset .Params "link" }}
+            	"_external-link": {{ .Params.link | jsonify }},
+            	{{- end }}
+                "url": {{ .Permalink | jsonify }},
+                "id": {{ .Permalink | jsonify }},
+                "content_text": {{ .Summary | jsonify }}
+            }
+        {{- end }}
+    ]
+}

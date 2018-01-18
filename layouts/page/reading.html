@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+
+	<content>{{"<!-- from tbr.single //-->" | safeHTML}}
+		<article>
+		  <h1>
+		  	<svg class="icon icon-book">
+          		<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-book">
+                </use>
+			</svg> {{ .Title }}</h1>
+		  <div>
+		  <p>{{ .Content }}</p>
+		  </div>
+		  <div id="current"></div>
+		  <br />
+		  <div id="booklist"></div>
+		</article>
+
+	{{ partial "mention.html" . }}
+	{{ partial "webmention.html" }}
+	</content>
+	<script type="text/javascript" src="{{ .Site.BaseURL }}js/bookcurrent.js"></script>
+    <script type="text/javascript" src="{{ .Site.BaseURL }}js/booklistread.js"></script>
+{{ partial "footer.html" . }}

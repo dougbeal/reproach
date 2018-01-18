@@ -2,16 +2,29 @@
 {{ partial "sidebar.html" . }}
 
 	<content>{{"<!-- from micro.single //-->" | safeHTML}}
-			<h3><svg class="icon icon-power">
-				<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-power"></use>
-			</svg> Microentry</h3>
+			<h3>
+				<svg class="icon icon-power">
+					<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-power"></use>
+				</svg> Microentry
+			</h3>
+			<article class="h-entry hentry">
 			{{ partial "p_microentry.html" . }}
+			{{- if .Params.checkin }}
+		    	<div style="z-index:0;position:relative;width:600px">
+		    		<img src="/{{ .Params.map }}" class="map-image" height="240" width="600">
+		    		<div style="position:absolute;z-index:1;right:0;bottom:0;">
+		    			<small>
+		    				<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap
+		    				</a>
+		    			</small>
+		    		</div>
+		    	</div>
+	    	{{- end }}
 			{{ partial "micrometadata.html" . }}
-	    </article>
-
-	{{ partial "articlepagination.html" . }}
-	{{ partial "mention.html" . }}
-	{{- partial "webmention.html" }}
+			</article>
+			{{ partial "articlepagination.html" . }}
+			{{ partial "mention.html" . }}
+			{{ partial "webmention.html" }}
 	</content>
 
 {{ partial "footer.html" . }} 
