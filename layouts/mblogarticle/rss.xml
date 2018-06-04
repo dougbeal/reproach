@@ -9,15 +9,10 @@
     <name>{{.}}</name>{{ with $.Site.Author.email }}
     <email>{{.}}</email>{{end}}
   </author>{{end}}
-  <generator>Hugo -- gohugo.io</generator>{{ range first 50 (where .Data.Pages "Type" "in" (slice "article" "micro" "review" "link" )) }}
+  <generator>Hugo -- gohugo.io</generator>{{ range first 10 (where .Site.Pages "Type" "article") }}
   <entry>
-    {{ `<title type="html"><![CDATA[` | safeHTML }}{{- if .Params.link }}🔗 {{- end}}{{ .Title }}]]></title>
-    {{- if .Params.link }}
-      <link rel="alternate" type="text/html" href="{{ .Params.link }}" />
-      <link rel="related" type="text/html" href="{{ .Permalink }}" />
-    {{- else}}
+    <title></title>
     <link href="{{ .Permalink }}"/>
-    {{- end }}
     <id>{{ .Permalink }}</id>{{ with .Site.Params.Author }}
     <author>
       <name>{{.}}</name>
@@ -25,16 +20,11 @@
     <published>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</published>
     <updated>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
     {{ `<content type="html"><![CDATA[` | safeHTML }}
-            {{- if .Params.checkurl }}
-            <p>Checked in at {{ .Params.checkloc }}</p>
-            {{- end }}
-            {{- if isset .Params "photo" }}
-            <img src="{{ delimit (index .Params "photo") ""}}" class="u-photo" width="200" height="200"></img>
-            {{- end }}
             {{- if .Params.replytourl }}
             <p>Replying to a post on <a href="{{ .Params.replytourl}}">{{ .Params.replysite }}</a></p>
             {{- end }}
-    {{ .Content }}]]></content>
+    {{ slicestr .Summary 0 200 | safeHTML }} [...] <a href="{{ .Permalink }}">{{ .Title }}</a>]]></content>
   </entry>{{ end }}
 </feed>
 <!-- ends -->
+

@@ -1,9 +1,9 @@
 /*
-                                _        
-    ___ ___ ___ ___ ___ ___ ___| |_      
-   |  _| -_| . |  _| . | .'|  _|   |     
-   |_| |___|  _|_| |___|__,|___|_|_|     
-           |_|                           
+                                _
+    ___ ___ ___ ___ ___ ___ ___| |
+   |  _| -_| . |  _| . | .'|  _|   |
+   |_| |___|  _|_| |___|__,|___|_|_|
+           |_|
                                          */
 
 main {
@@ -58,7 +58,17 @@ html {
 }
 
 body {
-    font-family: Georgia, serif;
+/*    font-family: -apple-system, 
+                 BlinkMacSystemFont, 
+                 "Segoe UI", 
+                 Roboto, 
+                 Oxygen-Sans, 
+                 Ubuntu, 
+                 Cantarell, 
+                 "Helvetica Neue", 
+                 sans-serif;
+*/
+    font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 1em;
   	line-height: 1.6111em;
  	margin: auto;
@@ -71,7 +81,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #181818;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;;
 }
 
 h1 {
@@ -137,6 +147,14 @@ hr, .hr {
 /*a, b, i, strong, em, small, code {
   line-height: 0;
 }*/
+
+p code {
+	padding: 0 5px 2px;	
+	font-size: 0.9em;
+	color: whitesmoke;
+	background-color: #16161d;
+}
+
 sub, sup {
   line-height: 0;
   position: relative;
@@ -149,19 +167,12 @@ sub {
   bottom: -0.25em;
 }
 
-pre {
-	display: block;
-    font-family: menlo, monospace;
-    white-space: pre;
-    margin: 1em 0;
-    font-size: 75%;
-}
 
 div.meta {
+    font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 75%;
-	font-family: Georgia, serif;
 	font-style: italic;
-	color: #999;
+	color: #666;
 }
 
 div.floatright {
@@ -180,7 +191,7 @@ div.p-summary {
 }
 
 div.e-content p {
-	text-align: justify;
+	text-align: left;
 }
 
 #current {
@@ -293,6 +304,7 @@ div.tbr-item {
 
 #sitetitle a {
 	color: #367588;
+    letter-spacing: -0.05em;
 }
 
 #sitetitle a .ochre {
@@ -303,7 +315,7 @@ div.tbr-item {
 nav li {
 	font-family: Georgia, serif;
 	font-style: italic;
-	color: #999;
+	color: #888;
 }
 
 nav ul {
@@ -311,11 +323,11 @@ nav ul {
 }
 nav a {
 	text-decoration: none!important;
-	color: #999;
+	color: #888;
 }
 
 nav a:visited {
-	color: #999;
+	color: #888;
 }
 
 nav a:hover {
@@ -329,7 +341,7 @@ nav ul {
 
 nav li {
 	font-style: italic;
-	color: #999;
+	color: #888;
 }
 
 nav h1 a {
@@ -422,14 +434,14 @@ h1 a:visited:hover {
 a.metatag {
 	text-decoration: none !important;
 	border-bottom: none !important;
-	color: #777;
+	color: #666;
 	background: whitesmoke;
 }
 
 a.metatag:link {
 	text-decoration: none !important;
 	border-bottom: none !important;
-	color: #777;
+	color: #666;
 	background: whitesmoke;
 }
 
@@ -443,7 +455,7 @@ a.metatag:hover {
 a.metatag:visited {
 	text-decoration: none !important;
 	border-bottom: none !important;
-	color: #777;
+	color: #666;
 	background: whitesmoke;
 }
 
@@ -544,7 +556,15 @@ li.active a {
 
 a[rel="next"], a[rel="prev"] {
 	text-decoration: none !important;
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family:  -apple-system,
+                  BlinkMacSystemFont,
+                  "Segoe UI",
+                  Roboto,
+                  Oxygen-Sans,
+                  Ubuntu,
+                  Cantarell,
+                  "Helvetica Neue",
+                  sans-serif;
 	color: whitesmoke;
 	line-height: 1;
 	padding: 0.2em 0.5em 0.2em;
@@ -557,7 +577,15 @@ a[rel="next"], a[rel="prev"] {
 
 a:hover[rel="next"], a:hover[rel="prev"] {
 	text-decoration: none !important;
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-family:  -apple-system,
+                  BlinkMacSystemFont,
+                  "Segoe UI",
+                  Roboto,
+                  Oxygen-Sans,
+                  Ubuntu,
+                  Cantarell,
+                  "Helvetica Neue",
+                  sans-serif;
 	color: #367588;
 	background-color: whitesmoke;
 	padding: 0.2em 0.5em 0.2em;
@@ -589,10 +617,6 @@ th, tfoot {
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
-}
-
-.icon-microblog {
-	stroke-width: 2;
 }
 
 .icon-ascraeus:hover {
@@ -660,6 +684,20 @@ th, tfoot {
 
 .icon-masto:hover {
 	fill: #189efc;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.icon-microblog:hover {
+	fill: #fd8308;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.icon-keybase:hover {
+	fill: #33a0ff;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
@@ -829,17 +867,9 @@ img.author-photo {
 	padding-top: 5px;
 }
 
-a.authorUrl {
+a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 	text-decoration: none;
 	color: #777;
 	background: #fff;
 	font-size: .90em;
 }
-a.authorUrl:hover {
-	text-decoration: none;
-	color: #777;
-	background: #fff;
-	font-size: .90em;
-}
-
-

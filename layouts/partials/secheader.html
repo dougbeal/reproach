@@ -32,11 +32,16 @@
        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/reproach.min.css" />
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/bigfoot-default.css" />
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/syntax.css" />
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/webmention.css" />
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/syntax.css" />
   <!-- indieweb components -->
   <link rel="pingback" href="https://webmention.io/ascraeus.org/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/ascraeus.org/webmention" />
+  <!-- rss feeds -->
+  <link rel="alternate" type="application/atom+xml" title="Ascraeus Main Feed" href="{{ .Site.BaseURL }}index.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Ascraeus Micropost Feed" href="{{ .Site.BaseURL }}micro/index.xml" />
+  <link rel="self" href="{{ .Permalink }}" />
+  <link rel="hub" href="https://switchboard.p3k.io/" />
 
   <!-- Metadata for Twitter and OpenGraph -->
   {{ partial "twittergraph.html" . }}

@@ -26,17 +26,34 @@
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
   <link rel="manifest" href="/manifest.json" />
   <link rel="mask-icon" href="/ascraeus_icon.svg" color="#367588" />
+  <link rel="pgpkey" href="/pgp_key.txt" />
+  <link rel="author" href="/pages/about/" title="About the author" />
   <meta name="theme-color" content="#f5f5f5">
 
   <!-- CSS
        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/reproach.min.css" />
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/reproach.css" />
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/bigfoot-default.css" />
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/syntax.css" />
   <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/webmention.css" />
-  <!-- indieweb components -->
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/syntax.css" />
+  {{- if .Site.Author.email }}
+  <link rel="me" href="mailto:{{ .Site.Author.email }}" />
+  {{- end }}
+  <!-- indieweb components --> 
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
   <link rel="pingback" href="https://webmention.io/ascraeus.org/xmlrpc" />
   <link rel="webmention" href="https://webmention.io/ascraeus.org/webmention" />
+  <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+  <link rel="micropub" href="https://ascraeus.org/nanopub.php" />
+  <link rel="microsub" href="https://greyarea.ascraeus.org/microsub/1" />
+  <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://xmlrpc.p3k.io/ascraeus.org/xmlrpc?rsd" />
+  <!-- rss feeds -->
+  <link rel="alternate" type="application/atom+xml" title="Ascraeus Main Feed" href="{{ .Site.BaseURL }}index.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Ascraeus Micropost Feed" href="{{ .Site.BaseURL }}micro/index.xml" />
+  <link rel="alternate" type="application/json" title="Ascraeus JSON feed" href="{{ .Site.BaseURL}}jsonfeed/index.json" />
+  <link rel="self" href="{{ .Site.BaseURL }}" />
+  <link rel="hub" href="https://switchboard.p3k.io/" />
+  <link rel="me" href="https://micro.blog/dgold" />
 
   <!-- Metadata for Twitter and OpenGraph -->
   {{ partial "twittergraph.html" . }}
