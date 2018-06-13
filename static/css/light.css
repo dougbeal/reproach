@@ -623,6 +623,13 @@ th, tfoot {
 	transition: all 0.5s;
 }
 
+.icon-contrast:hover {
+    fill: #16161d;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
 .icon-ascraeus:hover {
 	fill: #367588;
 	-webkit-transition: all 0.5s;
@@ -877,28 +884,6 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 	background: #fff;
 	font-size: .90em;
 }
-
-/* Dark Mode Toggle */
-.mode-link a, .mode-link a:hover, .mode-link a:visited {
-    color: #16161d;
-}
-
-/*.light:after {
-    content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
-}
-
-.dark:after {
-    content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
-}
-
-/*.light:after {
-    content: url('https://ascraeus.org/images/light.png');
-}
-
-.dark:after {
-    content: url('https://ascraeus.org/images/dark.png');
-}*/
-
 
  .bigfoot-footnote__content {
      background: whitesmoke;
