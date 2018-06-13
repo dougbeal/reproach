@@ -904,13 +904,6 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 	 color: #fff;
  }
 
-.mode-link {
- position: absolute;
- top: 36px;
- right: 12px;
-}
-
-
 
 /* Tooltip container */
 .tooltip {
