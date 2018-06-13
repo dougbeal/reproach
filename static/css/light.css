@@ -873,3 +873,8 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 	background: #fff;
 	font-size: .90em;
 }
+
+/* Dark Mode Toggle */
+.mode-link a, .mode-link a:hover, .mode-link a:visited {
+    color: #16161d;
+}

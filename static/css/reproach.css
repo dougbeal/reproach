@@ -877,6 +877,11 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 	font-size: .90em;
 }
 
+/* Dark Mode Toggle */
+.mode-link a, .mode-link a:hover, .mode-link a:visited {
+    color: #d8d8d8;
+}
+
 /* Tooltip container */
 .tooltip {
     position: relative;
