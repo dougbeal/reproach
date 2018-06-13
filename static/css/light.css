@@ -884,12 +884,20 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 }
 
 .light:after {
+    content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
+}
+
+.dark:after {
+    content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
+}
+
+/*.light:after {
     content: url('https://ascraeus.org/images/light.png');
 }
 
 .dark:after {
     content: url('https://ascraeus.org/images/dark.png');
-}
+}*/
 
 #switch {
     font-size: 0.5em;
