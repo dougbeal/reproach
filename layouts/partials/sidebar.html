@@ -68,34 +68,38 @@
                 </div>
                 </li>
 				<li>
-                <div class="tooltip"><div class="mode-link"><a id="switch" href="#" onclick='clickSwitch'>
-                    <script>
-                        toggle = document.getElementById('switch');
-                        function doSwitch() {
-	                    if (sessionStorage.getItem('theme') == null) {
-		                sessionStorage.setItem('theme', 'dark');
-	                    }
+                    <div class="tooltip"><div class="mode-link"><a id="switch" class="metatag" href="#" onclick='clickSwitch'>
+                        <svg class="icon icon-contrast">
+                            <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-contrast">
+                            </use>
+                        </svg>
+                        <script>
+                            toggle = document.getElementById('switch');
+                            function doSwitch() {
+                                    if (sessionStorage.getItem('theme') == null) {
+                                        sessionStorage.setItem('theme', 'dark');
+                                    }
 
-	                    if (sessionStorage.getItem('theme') == 'light') {
-		                document.getElementById('theme').href='https://ascraeus.org/css/light.min.css';
-    	                toggle.className = 'light';
-    	                sessionStorage.setItem('theme', 'light');
-	                    } else {
-		                toggle.className = 'dark';
-	                    }
-                        }
-                        toggle.addEventListener('click', function () {
-	                    if (sessionStorage.getItem('theme') == 'dark' ) {
-		                document.getElementById('theme').href='https://ascraeus.org/css/light.min.css';
-    	                toggle.className = 'light';
-    	                sessionStorage.setItem('theme', 'light');
-	                    } else {
-    	                document.getElementById('theme').href='';
-    	                toggle.className = 'dark';
-    	                sessionStorage.setItem('theme', 'dark');
-	                    } 
-                        });
-                    </script>
+                                    if (sessionStorage.getItem('theme') == 'light') {
+                                        document.getElementById('theme').href='https://ascraeus.org/css/light.min.css';
+                                        toggle.className = 'light';
+                                        sessionStorage.setItem('theme', 'light');
+                                    } else {
+                                        toggle.className = 'dark';
+                                    }
+                                }
+                                toggle.addEventListener('click', function () {
+                                    if (sessionStorage.getItem('theme') == 'dark' ) {
+                                        document.getElementById('theme').href='https://ascraeus.org/css/light.min.css';
+                                        toggle.className = 'light';
+                                        sessionStorage.setItem('theme', 'light');
+                                    } else {
+                                        document.getElementById('theme').href='';
+                                        toggle.className = 'dark';
+                                        sessionStorage.setItem('theme', 'dark');
+                                    } 
+                                });
+                            </script>
                     <span class="tooltiptext">toggle theme</span></a>
                 </div>
                 </div>

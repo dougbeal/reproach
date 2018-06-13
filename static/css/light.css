@@ -613,7 +613,7 @@ th, tfoot {
 /* SVG Icons
 ------------------------------------------ */
 
-.icon, .icon-ascraeus, .icon-rss, .icon-drawer, .icon-link, .icon-weather, .icon-twitter, .icon-book, .icon-google-plus, .icon-infinite, .icon-telegram, .icon-instagram, .icon-microblog {
+.icon, .icon-ascraeus, .icon-rss, .icon-drawer, .icon-link, .icon-weather, .icon-twitter, .icon-book, .icon-google-plus, .icon-infinite, .icon-telegram, .icon-instagram, .icon-microblog, .icon-contrast {
 	display: inline-block;
 	width: 1em;
 	height: 1em;
@@ -815,7 +815,7 @@ input[type="url"] {
 label,
 legend {
 	display: block;
-	font-weight: bold;
+	font-weight: bsold;
 	font-size: 13px;
 }
 select {
@@ -883,7 +883,7 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
     color: #16161d;
 }
 
-.light:after {
+/*.light:after {
     content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
 }
 
