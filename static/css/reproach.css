@@ -439,35 +439,14 @@ h1 a:visited:hover {
 	display: inline-block;
 }
 
-a.metatag {
+a.metatag, a.metatag:link, a.metatag:visited {
 	text-decoration: none !important;
 	border-bottom: none !important;
-	color: #b8b8b8;
+	color: #989898;
 	background: #16161d;
 }
 
-a.metatag:link {
-	text-decoration: none !important;
-	border-bottom: none !important;
-	color: #b8b8b8;
-	background: #16161d;
-}
-
-a.metatag:hover {
-	text-decoration: none !important;
-	border-bottom: none !important;
-	color: #dc9656;
-	background: #16161d;
-}
-
-a.metatag:visited {
-	text-decoration: none !important;
-	border-bottom: none !important;
-	color: #b8b8b8;
-	background: #16161d;
-}
-
-a.metatag:visited:hover {
+a.metatag:hover, a.metatag:visited:hover {
 	text-decoration: none !important;
 	border-bottom: none !important;
 	color: #dc9656;
