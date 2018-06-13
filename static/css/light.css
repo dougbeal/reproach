@@ -899,14 +899,6 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
     content: url('https://ascraeus.org/images/dark.png');
 }*/
 
-#switch {
-    font-size: 0.5em;
-}
-
- #switch:focus {
-     outline: none;
-	 color: #fff;
- }
 
  .bigfoot-footnote__content {
      background: whitesmoke;

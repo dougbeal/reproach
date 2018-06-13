@@ -879,15 +879,6 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
      content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
  }
 */
- #switch {
-     font-size: 0.5em;
- }
-
- #switch:focus {
-     outline: none;
-	 color: #fff;
- }
-
 
 /* Tooltip container */
 .tooltip {
