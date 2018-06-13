@@ -878,3 +878,11 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 .mode-link a, .mode-link a:hover, .mode-link a:visited {
     color: #16161d;
 }
+
+.light:after {
+    content: url('https://ascraeus.org/images/light.png');
+}
+
+.dark:after {
+    content: url('https://ascraeus.org/images/dark.png');
+}

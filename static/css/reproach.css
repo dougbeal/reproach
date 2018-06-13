@@ -882,6 +882,28 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
     color: #d8d8d8;
 }
 
+#preload {
+    background: url('https://ascraeus.org/images/dark.png');
+    height: 0px;
+}
+
+ .light:after {
+     content: url('https://ascraeus.org/images/light.png');
+ }
+
+ .dark:after {
+     content: url('https://ascraeus.org/images/dark.png');
+ }
+
+ #switch {
+     font-size: 0.5em;
+ }
+
+ #switch:focus {
+     outline: none;
+	 color: #fff;
+ }
+
 /* Tooltip container */
 .tooltip {
     position: relative;
