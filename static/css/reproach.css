@@ -867,16 +867,16 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 }
 
 #preload {
-    background: url('https://ascraeus.org/images/dark.png');
+    background: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
     height: 0px;
 }
 
  .light:after {
-     content: url('https://ascraeus.org/images/light.png');
+     content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
  }
 
  .dark:after {
-     content: url('https://ascraeus.org/images/dark.png');
+     content: url('https://ascraeus.org/svg/symbol-defs.svg#icon-contrast');
  }
 
  #switch {
