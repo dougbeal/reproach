@@ -13,7 +13,7 @@
                             {{- end }}
                             &bull;&nbsp;
                             {{- if .Params.weather }}
-                                <svg class="icon icon-weather" role="image">
+                                <svg class="icon icon-weather metatag" role="image">
                                     <title>{{ .Params.weather }}</title>
                                     <use xlink:href="{{ .Site.BaseURL }}svg/weather-defs.svg#wi-{{ .Params.wicon }}">
                                     </use>

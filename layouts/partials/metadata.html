@@ -39,7 +39,7 @@
                     <a href="{{ .Permalink }}" class="metatag u-url u-uid"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00"}}">
                     {{ .Date.Format "Mon, Jan 2, 2006" }}</time></a> &bull; 
                     {{- if .Params.weather }}
-                        <svg class="icon icon-weather" role="image">
+                        <svg class="icon icon-weather metatag" role="image">
                             <title>{{ .Params.weather }}</title>
                             <use xlink:href="{{ .Site.BaseURL }}svg/weather-defs.svg#wi-{{ .Params.wicon }}">
                             </use>
@@ -80,6 +80,6 @@
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
                         {{- end }}
-                    ~{{ .ReadingTime }} min read
+                            <span class="metatag"> ~{{ .ReadingTime }} min read</span>
                 </div>
                 {{- end }}
