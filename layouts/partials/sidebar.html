@@ -64,7 +64,44 @@
                          <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-rss">
                          </use>
                      </svg>
-                     <span class="tooltiptext"> feeds</a></span></li>
+                     <span class="tooltiptext"> feeds</span></a>
+                </li>
+                <li><div class="tooltip"><div class="mode-link"><a id="switch" href="#" onclick='clickSwitch' class="dark">
+                    <script>
+                        toggle = document.getElementById('switch');
+                        function doSwitch() {
+	                    if (sessionStorage.getItem('theme') == null) {
+		                sessionStorage.setItem('theme', 'dark');
+	                    }
+
+	                    if (sessionStorage.getItem('theme') == 'light') {
+		                document.getElementById('theme').href='https://ascraeus.org/light.css';
+    	                toggle.className = 'light';
+    	                sessionStorage.setItem('theme', 'light');
+	                    } else {
+		                toggle.className = 'dark';
+	                    }
+                        }
+                        toggle.addEventListener('click', function () {
+	                    if (sessionStorage.getItem('theme') == 'dark' ) {
+		                document.getElementById('theme').href='https://ascraeus.org/light.css';
+    	                toggle.className = 'light';
+    	                sessionStorage.setItem('theme', 'light');
+	                    } else {
+    	                document.getElementById('theme').href='';
+    	                toggle.className = 'dark';
+    	                sessionStorage.setItem('theme', 'dark');
+	                    } 
+                        });
+                    </script>
+                    <svg class="icon icon-power">
+                        <use xlink:ref="{{ .SiteBaseUrl }}svg/symbol-defs.svg#icon-power">
+                        </use>
+                    </svg>
+                    <span class="tooltiptext"> toggle dark mode</span></a>
+                </div>
+                </div>
+                </li>
 				</ul>
                     <form method="get" class="hidden" id="search" action="https://duckduckgo.com/">
                         <input type="hidden" name="sites" value="ascraeus.org" />
