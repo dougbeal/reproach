@@ -623,6 +623,10 @@ th, tfoot {
 	transition: all 0.5s;
 }
 
+.icon-contrast {
+    fill: #888;
+}
+
 .icon-contrast:hover {
     fill: #16161d;
 	-webkit-transition: all 0.5s;
