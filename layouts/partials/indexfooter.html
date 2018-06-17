@@ -80,7 +80,18 @@
                          </use>
                      </svg></a>
                 {{- end }}
-            </div>
+                <form method="get" id="search" action="https://duckduckgo.com/">
+                    <input type="hidden" name="sites" value="ascraeus.org" />
+                    <input type="hidden" name="ka" value="h" />
+                    <input type="hidden" name="k7" value="#fafafa" />
+                    <input type="hidden" name="kj" value="#3f3f3f" />
+                    <input type="hidden" name="ky" value="#fafafa" />
+                    <input type="hidden" name="kx" value="b" />
+                    <input type="hidden" name="kt" value="Helvetica" />
+                    <input type="text" name="q" maxlength="255" placeholder="Search" />
+                    <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+                </form>
+    </div>
 
 		<p class="feet h-card vcard">{{ .Site.Title }} &copy; <a href={{ .Site.BaseURL }} class="p-name u-url url author metatag" rel="me">{{ .Site.Author.name }}</a><img src="{{ .Site.BaseURL }}pictures/marvin.png" class="u-photo" style="display: none"> <a class="p-nickname u-email email metatag" rel="me" href="mailto:dgold@ascraeus.org">{{ .Site.Author.nick }}</a> 2011-{{ now.Format "2006" }} &bull; Licenced under <a href="{{ .Site.BaseURL }}page/licence" class="metatag">CC-BY-NC-SA</a> &bull; <a href="{{ .Site.BaseURL}}page/privacy" class="metatag">Privacy Policy</a> </p>
 	</footer>

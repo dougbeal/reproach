@@ -8,75 +8,103 @@
 				</div>
 				{{- if .Site.Author.name }}
 				<ul>
-                <li><a href="{{ .Site.BaseURL }}page/about" title="About" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}page/about" class="metatag">
                     <svg class="icon icon-ascraeus">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-ascraeus">
-                         </use>
-                     </svg> <span class="hidden">about</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-ascraeus">
+                        </use>
+                    </svg> <span class="tooltiptext">about</span></a></div>
                 </li>
                 {{- end }}
 				{{- if .Site.Author.micro }}
-				<li><a href="{{ .Site.BaseURL }}micro" title="Micro Blog" class="metatag">
+				<li><div class="tooltip"><a href="{{ .Site.BaseURL }}micro" class="metatag">
 					<svg class="icon icon-power">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-power">
-                         </use>
-                     </svg> <span class="hidden">micro</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-power">
+                        </use>
+                    </svg> <span class="tooltiptext">micro posts</span></a></div>
                 </li>
 				{{- end }}
-                <li><a href="{{ .Site.BaseURL }}article" title="articles" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}article" class="metatag">
                     <svg class="icon icon-blog">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-blog">
-                         </use>
-                     </svg> <span class="hidden">posts</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-blog">
+                        </use>
+                    </svg> <span class="tooltiptext">longer articles</span></a></div>
                 </li>
-                <li><a href="{{ .Site.BaseURL }}review" title="reviews" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}review" class="metatag">
                     <svg class="icon icon-star-half">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-star-half">
-                         </use>
-                     </svg> <span class="hidden">reviews</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-star-half">
+                        </use>
+                    </svg> <span class="tooltiptext">reviews</span></a></div>
                 </li>
-                <li><a href="{{ .Site.BaseURL }}page/tbr" title="tbr" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}page/tbr" class="metatag">
                     <svg class="icon icon-infinite">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-infinite">
-                         </use>
-                     </svg> <span class="hidden">tbr</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-infinite">
+                        </use>
+                    </svg> <span class="tooltiptext">to be read</span></a></div>
                 </li>
-                <li><a href="{{ .Site.BaseURL }}page/reading" title="reading" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}page/reading" class="metatag">
                     <svg class="icon icon-book">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-book">
-                         </use>
-                     </svg> <span class="hidden">reading</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-book">
+                        </use>
+                    </svg> <span class="tooltiptext">reading</span></a></div>
                 </li>
-                <li><a href="{{ .Site.BaseURL }}link" title="links" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}link" class="metatag">
                     <svg class="icon icon-link">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-link">
-                         </use>
-                     </svg> <span class="hidden">link posts</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-link">
+                        </use>
+                    </svg> <span class="tooltiptext">link posts</span></a></div>
                 </li>
-                <li><a href="{{ .Site.BaseURL }}like" title="likes+reposts" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}like" class="metatag">
                     <svg class="icon icon-loop">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-loop">
-                         </use>
-                     </svg> <span class="hidden">likes+reposts</span></a>
+                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-loop">
+                        </use>
+                    </svg> <span class="tooltiptext">likes & reposts</span></a></div>
                 </li>
-                <li><a href="{{ .Site.BaseURL }}page/feeds" title="site feeds" class="metatag">
+                <li><div class="tooltip"><a href="{{ .Site.BaseURL }}page/feeds" class="metatag">
 					<svg class="icon icon-rss">
                          <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-rss">
                          </use>
                      </svg>
-                <span class="hidden"> feeds</a></li>
-				</ul>			
-                    <form method="get" class="hidden" id="search" action="https://duckduckgo.com/">
-                        <input type="hidden" name="sites" value="ascraeus.org" />
-                        <input type="hidden" name="ka" value="h" />
-                        <input type="hidden" name="k7" value="#fafafa" />
-                        <input type="hidden" name="kj" value="#3f3f3f" />
-                        <input type="hidden" name="ky" value="#fafafa" />
-                        <input type="hidden" name="kx" value="b" />
-                        <input type="hidden" name="kt" value="Helvetica" />
-                        <input type="text" name="q" maxlength="255" placeholder="Search" />
-                        <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-                    </form>
+                     <span class="tooltiptext">feeds</span></a>
+                </div>
+                </li>
+				<li>
+                    <div class="tooltip"><div class="mode-link"><a id="switch" class="metatag" href="#" onclick='clickSwitch'>
+                        <svg class="icon icon-contrast">
+                            <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-contrast">
+                            </use>
+                        </svg>
+                        <script>
+                            toggle = document.getElementById('switch');
+                            function doSwitch() {
+                                    if (sessionStorage.getItem('theme') == null) {
+                                        sessionStorage.setItem('theme', 'dark');
+                                    }
+
+                                    if (sessionStorage.getItem('theme') == 'light') {
+                                        document.getElementById('theme').href='https://ascraeus.org/css/light.min.css';
+                                        toggle.className = 'light';
+                                        sessionStorage.setItem('theme', 'light');
+                                    } else {
+                                        toggle.className = 'dark';
+                                    }
+                                }
+                                toggle.addEventListener('click', function () {
+                                    if (sessionStorage.getItem('theme') == 'dark' ) {
+                                        document.getElementById('theme').href='https://ascraeus.org/css/light.min.css';
+                                        toggle.className = 'light';
+                                        sessionStorage.setItem('theme', 'light');
+                                    } else {
+                                        document.getElementById('theme').href='';
+                                        toggle.className = 'dark';
+                                        sessionStorage.setItem('theme', 'dark');
+                                    } 
+                                });
+                            </script>
+                    <span class="tooltiptext">toggle theme</span></a>
+                </div>
+                </div>
+                </li>
+                </ul>
 			</nav>
 		</header>
 	</aside>
