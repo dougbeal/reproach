@@ -2,7 +2,7 @@
 {{ partial "sidebar.html" . }}
 	<content>{{"<!-- from section.micro.html //-->" | safeHTML}}
 	  <h1><svg class="icon icon-power">
-				<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-power"></use>
+				<use xlink:href="/svg/symbol-defs.svg#icon-power"></use>
 			</svg>microblog</h1>
 
 	  {{- range (.Paginate (where .Site.Pages "Section" "micro")).Pages }}

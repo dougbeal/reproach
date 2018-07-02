@@ -15,14 +15,14 @@
                             {{- if .Params.weather }}
                                 <svg class="icon icon-weather" role="image">
                                     <title>{{ .Params.weather }}</title>
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/weather-defs.svg#wi-{{ .Params.wicon }}">
+                                    <use xlink:href="/svg/weather-defs.svg#wi-{{ .Params.wicon }}">
                                     </use>
                                 </svg>
                                 &nbsp;{{ .Params.temp }}&deg;C&nbsp;&bull;&nbsp;
                             {{- end }}
-                                <a href="{{ .Site.BaseURL }}" class="metatag u-author" title="Daniel Goldsmith">
+                                <a href="/" class="metatag u-author" title="Daniel Goldsmith">
                                     <svg class="icon">
-                                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-ascraeus">
+                                        <use xlink:href="/svg/symbol-defs.svg#icon-ascraeus">
                                         </use>
                                     </svg>
                                 </a>
@@ -30,7 +30,7 @@
                             {{- if .Params.instagram }}
                                 <a href="{{ .Params.instagram }}" class="metatag" title="syndicated to instagram">
                                     <svg class="icon icon-instagram">
-                                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-instagram">
+                                        <use xlink:href="/svg/symbol-defs.svg#icon-instagram">
                                         </use>
                                     </svg>
                                 </a>&nbsp;&bull;&nbsp;
@@ -38,7 +38,7 @@
                             {{- if .Params.twitlink }}
                                 <a href="{{ .Params.twitlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to twitter">
                                     <svg class="icon icon-twitter">
-                                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-twitter">
+                                        <use xlink:href="/svg/symbol-defs.svg#icon-twitter">
                                         </use>
                                     </svg>
                                 </a>&nbsp;&bull;&nbsp;
@@ -46,7 +46,7 @@
                             {{- if .Params.plus }}
                                 <a href="{{ .Params.plus }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to googleplus">
                                     <svg class="icon icon-google-plus">
-                                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-google-plus2">
+                                        <use xlink:href="/svg/symbol-defs.svg#icon-google-plus2">
                                         </use>
                                     </svg>
                                 </a>
@@ -54,7 +54,7 @@
                             {{- if .Params.mastodonlink }}
                                 <a href="{{ .Params.mastodonlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to mastodon">
                                     <svg class="icon icon-masto">
-                                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-masto">
+                                        <use xlink:href="/svg/symbol-defs.svg#icon-masto">
                                         </use>
                                     </svg>
                                 </a>&nbsp;&bull;&nbsp;
@@ -62,7 +62,7 @@
                             {{- if .Params.checkin }}
                                 <a href="{{ .Params.checkurl }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to swarm">
                                     <svg class="icon icon-swarm">
-                                        <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-swarm">
+                                        <use xlink:href="/svg/symbol-defs.svg#icon-swarm">
                                         </use>
                                     </svg>
                                 </a>&nbsp;&bull;

@@ -6,77 +6,77 @@
                 {{- if .Site.Author.microdotblog }}
                 <a href="https://micro.blog/{{ .Site.Author.microdotblog }}" title="micro.blog" class="metatag">
                     <svg class="icon icon-microblog">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-microblog">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-microblog">
                          </use>
                      </svg></a>
                 {{- end }}
 				{{- if .Site.Author.twitter }}
 				<a href="https://twitter.com/{{ .Site.Author.twitter }}" title="twitter" class="metatag">
 					<svg class="icon icon-twitter">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-twitter">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-twitter">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.google_plus }}
 				<a href="https://google.com/+{{ .Site.Author.google_plus }}" title="google+" class="metatag">
 					<svg class="icon icon-google-plus">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-google-plus">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-google-plus">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.mastodon }}
 				<a href="{{ .Site.Author.mastodon }}" title="mastodon" class="metatag">
 					<svg class="icon icon-masto">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-masto">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-masto">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.github }}
 				<a href="https://github.com/{{ .Site.Author.github }}" title="github" class="metatag">
 					<svg class="icon icon-github">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-github">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-github">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.instagram }}
 				<a href="https://instagram.com/{{ .Site.Author.instagram }}" title="instagram" class="metatag">
 					<svg class="icon icon-instagram">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-instagram">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-instagram">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.facebook }}
 				<a href="https://facebook.com/{{ .Site.Author.facebook }}" title="facebook" class="metatag">
 					<svg class="icon icon-facebook">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-facebook">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-facebook">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.linkedin }}
 				<a href="https://linkedin.com/in/{{ .Site.Author.linkedin }}" title="linkedin" class="metatag">
 					<svg class="icon icon-linkedin">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-linkedin">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-linkedin">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.flickr }}
 				<a href="https://flickr.com/{{ .Site.Author.flickr}}" title="flickr" class="metatag">
 					<svg class="icon icon-flickr">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-flickr">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-flickr">
                          </use>
                      </svg></a>
 				{{- end }}
 				{{- if .Site.Author.tumblr }}
 				<a href="https://{{ .Site.Author.tumblr }}.tumblr.com" title="tumblr" class="metatag">
 					<svg class="icon icon-tumblr2">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-tumblr2">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-tumblr2">
                          </use>
                      </svg></a>
                 {{- end }}
                 {{- if .Site.Author.keybase }}
                 <a href="https://keybase.io/{{ .Site.Author.keybase }}" title="keybase" class="metatag">
                     <svg class="icon icon-keybase">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-keybase">
+                         <use xlink:href="/svg/symbol-defs.svg#icon-keybase">
                          </use>
                      </svg></a>
                 {{- end }}
@@ -91,10 +91,9 @@
                     <input type="text" name="q" maxlength="255" placeholder="Search" />
                     <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
                 </form>
-
     </div>
 
-		<p class="feet">{{ .Site.Title }} &copy; <a href={{ .Site.BaseURL }} class="metatag">{{ .Site.Author.name }}</a><a class="metatag" href="mailto:dgold@ascraeus.org">{{ .Site.Author.nick }}</a> 2011-{{ now.Format "2006" }} &bull; Licenced under <a href="{{ .Site.BaseURL }}page/licence" class="metatag">CC-BY-NC-SA</a> &bull; <a href="{{ .Site.BaseURL }}page/privacy" class="metatag">Privacy Policy</a></p>
+		<p class="feet">{{ .Site.Title }} &copy; <a href="/" class="metatag">{{ .Site.Author.name }}</a> (<a class="metatag" href="mailto:dgold@ascraeus.org">{{ .Site.Author.nick }}</a>) 2011-{{ now.Format "2006" }} &bull; Licenced under <a href="/page/licence" class="metatag">CC-BY-NC-SA</a> &bull; <a href="/page/privacy" class="metatag">Privacy Policy</a></p>
 	</footer>
 </body>
 </html>
