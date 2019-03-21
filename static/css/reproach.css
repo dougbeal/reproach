@@ -28,7 +28,7 @@ nav ul li {
 		list-style-type: none;
 		list-style: none;
 		display: inline;
-		font-size: 32px;
+		font-size: 1em;
 	}
 
 nav {
@@ -135,10 +135,6 @@ p, ul, ol, pre, table, blockquote {
 	margin-bottom: 0em;
 }
 
-.indmicro {
-	padding: 0.5em;
-
-}
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0em;
   margin-bottom: 0em;
@@ -906,4 +902,14 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+.mode-link {
+    position: absolute;
+    top: 36px;
+    right: 12px;
+}
+
+.dark::after {
+   content: url('https://ascraeus.org/images/light.png');
 }

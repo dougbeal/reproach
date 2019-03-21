@@ -6,73 +6,14 @@
 				<div id="sitetitle">
 				<h1><a href="/">View&nbsp;from<span class="hidden">&nbsp;&nbsp;<br /></span> <span class="ochre">ASCRAEUS</span></a></h1>
 				</div>
-				{{- if .Site.Author.name }}
-				<ul>
-                <li><div class="tooltip"><a href="/page/about" class="metatag">
-                    <svg class="icon icon-ascraeus">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-ascraeus">
-                        </use>
-                    </svg> <span class="tooltiptext">about</span></a></div>
-                </li>
-                {{- end }}
-				{{- if .Site.Author.micro }}
-				<li><div class="tooltip"><a href="/micro" class="metatag">
-					<svg class="icon icon-power">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-power">
-                        </use>
-                    </svg> <span class="tooltiptext">micro posts</span></a></div>
-                </li>
-				{{- end }}
-                <li><div class="tooltip"><a href="/article" class="metatag">
-                    <svg class="icon icon-blog">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-blog">
-                        </use>
-                    </svg> <span class="tooltiptext">longer articles</span></a></div>
-                </li>
-                <li><div class="tooltip"><a href="/review" class="metatag">
-                    <svg class="icon icon-star-half">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-star-half">
-                        </use>
-                    </svg> <span class="tooltiptext">reviews</span></a></div>
-                </li>
-                <li><div class="tooltip"><a href="/page/tbr" class="metatag">
-                    <svg class="icon icon-infinite">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-infinite">
-                        </use>
-                    </svg> <span class="tooltiptext">to be read</span></a></div>
-                </li>
-                <li><div class="tooltip"><a href="/page/reading" class="metatag">
-                    <svg class="icon icon-book">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-book">
-                        </use>
-                    </svg> <span class="tooltiptext">reading</span></a></div>
-                </li>
-                <li><div class="tooltip"><a href="/link" class="metatag">
-                    <svg class="icon icon-link">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-link">
-                        </use>
-                    </svg> <span class="tooltiptext">link posts</span></a></div>
-                </li>
-                <li><div class="tooltip"><a href="/like" class="metatag">
-                    <svg class="icon icon-loop">
-                        <use xlink:href="/svg/symbol-defs.svg#icon-loop">
-                        </use>
-                    </svg> <span class="tooltiptext">likes & reposts</span></a></div>
-                </li>
-                <li><div class="tooltip"><a href="/page/feeds" class="metatag">
-					<svg class="icon icon-rss">
-                         <use xlink:href="/svg/symbol-defs.svg#icon-rss">
-                         </use>
-                     </svg>
-                     <span class="tooltiptext">feeds</span></a>
-                </div>
-                </li>
-				<li>
-                    <div class="tooltip"><div class="mode-link"><a id="switch" class="metatag" href="#" onclick='clickSwitch'>
-                        <svg class="icon icon-contrast">
-                            <use xlink:href="/svg/symbol-defs.svg#icon-contrast">
-                            </use>
-                        </svg>
+				<p>
+				[<a href="/page/about"
+				class="metatag">about</a>] 
+				[<a href="/article" class="metatag">posts</a>]
+				[<a href="/page/tbr" class="metatag">∞tbr</a>] 
+				[<a href="/page/feeds"
+				class="metatag">feeds</a>] 
+                    <div class="mode-link"><a id="switch" class="metatag" href="#" onclick='clickSwitch'>
                         <script>
                             toggle = document.getElementById('switch');
                             function doSwitch() {
@@ -99,12 +40,9 @@
                                         sessionStorage.setItem('theme', 'dark');
                                     } 
                                 });
-                            </script>
-                    <span class="tooltiptext">toggle theme</span></a>
-                </div>
-                </div>
-                </li>
-                </ul>
+                            </script></a>
+		    </div>
+		    </p>
 			</nav>
 		</header>
 	</aside>
