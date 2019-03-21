@@ -3,3 +3,6 @@ static/bookdb/
 static/js/bookcurrent.min.js
 archiver/
 rss.xml
+static/css/oldreproach.css
+static/css/reproach.css
+static/css/light.css

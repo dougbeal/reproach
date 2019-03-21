@@ -1,21 +1,21 @@
 		    {{- if .Params.replytourl }}
 			<small><svg class="icon icon-talk">
-					<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-talk"></use>
+					<use xlink:href="/svg/symbol-defs.svg#icon-talk"></use>
 				</svg> replying to a post on <a href="{{ .Params.replytourl }}" class="u-in-reply-to">{{ .Params.replysite }}</a></small>
 			{{- end }}
 			{{- if .Params.like_of }}
 			<small><svg class="icon icon-star-full">
-					<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-star-full"></use>
+					<use xlink:href="/svg/symbol-defs.svg#icon-star-full"></use>
 				</svg> liked a post on <a href="{{ .Params.like_of }}" class="u-like-of">{{ .Params.like_site }}</a></small>
 			{{- end }}
 			{{- if .Params.repost_of }}
 			<small><svg class="icon icon-loop">
-					<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-loop"></use>
+					<use xlink:href="/svg/symbol-defs.svg#icon-loop"></use>
 				</svg> reposted from <a href="{{ .Params.repost_of }}" class="u-repost-of">{{ .Params.repost_site }}</a></small>
 			{{- end }}
 			{{- if .Params.checkin }}
 			<small class="p-location h-card"><svg class="icon icon-location">
-				<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-location"></use>
+				<use xlink:href="/svg/symbol-defs.svg#icon-location"></use>
 			</svg> at <a href="{{ .Params.checkurl }}" class="u-url p-name">{{ .Params.checkloc }}</a></small>
 			{{- end }}
 			{{- if isset .Params "photo" }}

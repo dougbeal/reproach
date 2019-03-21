@@ -5,7 +5,7 @@
                         {{- if .Params.twitlink }}
                             <a href="{{ .Params.twitlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to twitter">
                                 <svg class="icon icon-twitter">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-twitter">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-twitter">
                                     </use>
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
@@ -13,7 +13,7 @@
                         {{- if .Params.plus }}
                             <a href="{{ .Params.plus }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to googleplus">
                                 <svg class="icon icon-google-plus">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-google-plus2">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-google-plus2">
                                     </use>
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
@@ -21,14 +21,14 @@
                         {{- if .Params.mastodonlink }}
                             <a href="{{ .Params.mastodonlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to mastodon">
                                 <svg class="icon icon-masto">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-masto">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-masto">
                                     </use>
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
                         {{- end }}
-                            <a href="{{ .Site.BaseURL }}" class="metatag u-author" title="Daniel Goldsmith">
+                            <a href="/" class="metatag u-author" title="Daniel Goldsmith">
                                 <svg class="icon">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-ascraeus">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-ascraeus">
                                     </use> 
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
@@ -41,7 +41,7 @@
                     {{- if .Params.weather }}
                         <svg class="icon icon-weather" role="image">
                             <title>{{ .Params.weather }}</title>
-                            <use xlink:href="{{ .Site.BaseURL }}svg/weather-defs.svg#wi-{{ .Params.wicon }}">
+                            <use xlink:href="/svg/weather-defs.svg#wi-{{ .Params.wicon }}">
                             </use>
                         </svg>
                         &nbsp;{{ .Params.temp }}&deg;C&nbsp;&bull;&nbsp;
@@ -49,9 +49,9 @@
                     {{ range .Params.tags }} 
                         <a href="/tags/{{.}}" class="metatag p-category">{{.}}</a>&nbsp;&bull;&nbsp;
                     {{- end}}
-                        <a href="{{ .Site.BaseURL }}" class="metatag u-author" title="Daniel Goldsmith">
+                        <a href="/" class="metatag u-author" title="Daniel Goldsmith">
                             <svg class="icon">
-                                <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-ascraeus">
+                                <use xlink:href="/svg/symbol-defs.svg#icon-ascraeus">
                                 </use> 
                             </svg>
                         </a>
@@ -59,7 +59,7 @@
                         {{- if .Params.twitlink }}
                             <a href="{{ .Params.twitlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to twitter">
                                 <svg class="icon icon-twitter">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-twitter">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-twitter">
                                     </use>
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
@@ -67,7 +67,7 @@
                         {{- if .Params.plus }}
                             <a href="{{ .Params.plus }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to googleplus">
                                 <svg class="icon icon-google-plus">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-google-plus2">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-google-plus2">
                                     </use>
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
@@ -75,7 +75,7 @@
                         {{- if .Params.mastodonlink }}
                             <a href="{{ .Params.mastodonlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to mastodon">
                                 <svg class="icon icon-masto">
-                                    <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-masto">
+                                    <use xlink:href="/svg/symbol-defs.svg#icon-masto">
                                     </use>
                                 </svg>
                             </a>&nbsp;&bull;&nbsp;
