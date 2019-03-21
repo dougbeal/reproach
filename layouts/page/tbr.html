@@ -5,7 +5,7 @@
 		<article>
 		  <h1>
 		  	<svg class="icon icon-infinite">
-          		<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-infinite">
+          		<use xlink:href="/svg/symbol-defs.svg#icon-infinite">
                 </use>
 			</svg> {{ .Title }}</h1>
 		  <div>
@@ -19,7 +19,7 @@
 	{{ partial "mention.html" . }}
 	{{ partial "webmention.html" . }}
 	</content>
-	<script type="text/javascript" src="{{ .Site.BaseURL }}js/bookcurrent.js"></script>
-	<script type="text/javascript" src="{{ .Site.BaseURL }}js/booklist.js"></script>
+	<script type="text/javascript" src="/js/bookcurrent.js"></script>
+	<script type="text/javascript" src="/js/booklist.js"></script>
 
 {{ partial "footer.html" . }}

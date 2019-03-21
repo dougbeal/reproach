@@ -4,79 +4,45 @@
 		<header>
 			<nav>
 				<div id="sitetitle">
-				<h1><a href="{{ .Site.BaseURL }}">View&nbsp;from<span class="hidden">&nbsp;&nbsp;<br /></span> <span class="ochre">ASCRAEUS</span></a></h1>
+				<h1><a href="/">View&nbsp;from<span class="hidden">&nbsp;&nbsp;<br /></span> <span class="ochre">ASCRAEUS</span></a></h1>
 				</div>
-				{{- if .Site.Author.name }}
-				<ul>
-                <li><a href="{{ .Site.BaseURL }}page/about" title="About" class="metatag">
-                    <svg class="icon icon-ascraeus">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-ascraeus">
-                         </use>
-                     </svg> <span class="hidden">about</span></a>
-                </li>
-                {{- end }}
-				{{- if .Site.Author.micro }}
-				<li><a href="{{ .Site.BaseURL }}micro" title="Micro Blog" class="metatag">
-					<svg class="icon icon-power">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-power">
-                         </use>
-                     </svg> <span class="hidden">micro</span></a>
-                </li>
-				{{- end }}
-                <li><a href="{{ .Site.BaseURL }}article" title="articles" class="metatag">
-                    <svg class="icon icon-blog">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-blog">
-                         </use>
-                     </svg> <span class="hidden">posts</span></a>
-                </li>
-                <li><a href="{{ .Site.BaseURL }}review" title="reviews" class="metatag">
-                    <svg class="icon icon-star-half">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-star-half">
-                         </use>
-                     </svg> <span class="hidden">reviews</span></a>
-                </li>
-                <li><a href="{{ .Site.BaseURL }}page/tbr" title="tbr" class="metatag">
-                    <svg class="icon icon-infinite">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-infinite">
-                         </use>
-                     </svg> <span class="hidden">tbr</span></a>
-                </li>
-                <li><a href="{{ .Site.BaseURL }}page/reading" title="reading" class="metatag">
-                    <svg class="icon icon-book">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-book">
-                         </use>
-                     </svg> <span class="hidden">reading</span></a>
-                </li>
-                <li><a href="{{ .Site.BaseURL }}link" title="links" class="metatag">
-                    <svg class="icon icon-link">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-link">
-                         </use>
-                     </svg> <span class="hidden">link posts</span></a>
-                </li>
-                <li><a href="{{ .Site.BaseURL }}like" title="likes+reposts" class="metatag">
-                    <svg class="icon icon-loop">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-loop">
-                         </use>
-                     </svg> <span class="hidden">likes+reposts</span></a>
-                </li>
-                <li><a href="{{ .Site.BaseURL }}page/feeds" title="site feeds" class="metatag">
-					<svg class="icon icon-rss">
-                         <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-rss">
-                         </use>
-                     </svg>
-                <span class="hidden"> feeds</a></li>
-				</ul>			
-                    <form method="get" class="hidden" id="search" action="https://duckduckgo.com/">
-                        <input type="hidden" name="sites" value="ascraeus.org" />
-                        <input type="hidden" name="ka" value="h" />
-                        <input type="hidden" name="k7" value="#fafafa" />
-                        <input type="hidden" name="kj" value="#3f3f3f" />
-                        <input type="hidden" name="ky" value="#fafafa" />
-                        <input type="hidden" name="kx" value="b" />
-                        <input type="hidden" name="kt" value="Helvetica" />
-                        <input type="text" name="q" maxlength="255" placeholder="Search" />
-                        <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-                    </form>
+				<p>
+				[<a href="/page/about"
+				class="metatag">about</a>] 
+				[<a href="/article" class="metatag">posts</a>]
+				[<a href="/page/tbr" class="metatag">∞tbr</a>] 
+				[<a href="/page/feeds"
+				class="metatag">feeds</a>] 
+                    <div class="mode-link"><a id="switch" class="metatag" href="#" onclick='clickSwitch'>
+                        <script>
+                            toggle = document.getElementById('switch');
+                            function doSwitch() {
+                                    if (sessionStorage.getItem('theme') == null) {
+                                        sessionStorage.setItem('theme', 'dark');
+                                    }
+
+                                    if (sessionStorage.getItem('theme') == 'light') {
+                                        document.getElementById('theme').href='/css/light.min.css';
+                                        toggle.className = 'light';
+                                        sessionStorage.setItem('theme', 'light');
+                                    } else {
+                                        toggle.className = 'dark';
+                                    }
+                                }
+                                toggle.addEventListener('click', function () {
+                                    if (sessionStorage.getItem('theme') == 'dark' ) {
+                                        document.getElementById('theme').href='/css/light.min.css';
+                                        toggle.className = 'light';
+                                        sessionStorage.setItem('theme', 'light');
+                                    } else {
+                                        document.getElementById('theme').href='';
+                                        toggle.className = 'dark';
+                                        sessionStorage.setItem('theme', 'dark');
+                                    } 
+                                });
+                            </script></a>
+		    </div>
+		    </p>
 			</nav>
 		</header>
 	</aside>

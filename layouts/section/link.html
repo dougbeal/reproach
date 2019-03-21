@@ -2,18 +2,18 @@
 {{ partial "sidebar.html" . }}
 	<content>{{"<!-- from section.link.html //-->" | safeHTML}}
 	  <h1><svg class="icon icon-link">
-				<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-link"></use>
+				<use xlink:href="/svg/symbol-defs.svg#icon-link"></use>
 			</svg>link posts</h1>
 			<div id="#revlist">
 				<article>
 	  {{- range (.Paginate (where .Site.Pages "Section" "link")).Pages }}
 	  		{{- if .Params.link }}
 		  	<h3 class="p-name"><a href={{ .Params.link }} class="u-bookmark-of"><svg class="icon icon-link">
-                <use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#icon-link">
+                <use xlink:href="/svg/symbol-defs.svg#icon-link">
                 </use></svg>{{ .Title }}
 				{{- if .Params.gplus }}
 					<svg class="icon icon-google-plus">
-					<use xlink:href="{{ .Site.BaseURL }}svg/symbol-defs.svg#google-plus">
+					<use xlink:href="/svg/symbol-defs.svg#google-plus">
                 </use></svg>
                 {{- end }}
                 </a></h3>
