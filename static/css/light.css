@@ -885,6 +885,3 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
     right: 12px;
 }
 
-.light::after {
-    content: url('https://ascraeus.org/images/dark.png');
-}

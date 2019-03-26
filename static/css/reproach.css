@@ -907,7 +907,3 @@ a.authorUrl, a.authorUrl:hover, a.authorUrl:visited {
     top: 36px;
     right: 12px;
 }
-
-.dark::after {
-   content: url('https://ascraeus.org/images/light.png');
-}
