@@ -125,13 +125,9 @@ h5 {
 }
 
 p, ul, ol, pre, table, blockquote {
-  margin-top: 0em;
   margin-bottom: 1.27777778em;
 }
 
-.indmicro p {
-	margin-bottom: 0em;
-}
 
 ul ul, ol ol, ul ol, ol ul {
   margin-top: 0em;

@@ -11,8 +11,7 @@
                             </use>
                         </svg>{{ .Title }}</a></h3>
 			{{- else if not .Title }}
-			<div class="indmicro">
-				<article class="h-entry hentry">
+			<article class="h-entry hentry">
 			{{- else }}
 			<article class="h-entry hentry">
 		    	<h3 class="p-name entry-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
@@ -29,8 +28,7 @@
 		    {{- end }}
 		    {{- if not .Title }}
 		    {{ partial "micrometadata.html" . }}
-                </article>
-            </div>
+            </article>
 		    {{- else }}
 				</div>
 			</article>
