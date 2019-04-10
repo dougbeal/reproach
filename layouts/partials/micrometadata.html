@@ -13,7 +13,7 @@
                             {{- end }}
                             &bull;&nbsp;
                             {{- if .Params.weather }}
-                                <svg class="icon icon-weather" role="image">
+                                <svg class="icon icon-weather" role="image" width="20" height="20">
                                     <title>{{ .Params.weather }}</title>
                                     <use xlink:href="/svg/weather-defs.svg#wi-{{ .Params.wicon }}">
                                     </use>
@@ -21,7 +21,7 @@
                                 &nbsp;{{ .Params.temp }}&deg;C&nbsp;&bull;&nbsp;
                             {{- end }}
                                 <a href="/" class="metatag u-author" title="Daniel Goldsmith">
-                                    <svg class="icon">
+                                    <svg class="icon" width="20" height="20">
                                         <use xlink:href="/svg/symbol-defs.svg#icon-ascraeus">
                                         </use>
                                     </svg>
@@ -29,7 +29,7 @@
                             &nbsp;&bull;&nbsp;
                             {{- if .Params.instagram }}
                                 <a href="{{ .Params.instagram }}" class="metatag" title="syndicated to instagram">
-                                    <svg class="icon icon-instagram">
+                                    <svg class="icon icon-instagram" width="20" height="20">
                                         <use xlink:href="/svg/symbol-defs.svg#icon-instagram">
                                         </use>
                                     </svg>
@@ -37,7 +37,7 @@
                             {{- end }}
                             {{- if .Params.twitlink }}
                                 <a href="{{ .Params.twitlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to twitter">
-                                    <svg class="icon icon-twitter">
+                                    <svg class="icon icon-twitter" width="20" height="20">
                                         <use xlink:href="/svg/symbol-defs.svg#icon-twitter">
                                         </use>
                                     </svg>
@@ -45,7 +45,7 @@
                             {{- end }}
                             {{- if .Params.plus }}
                                 <a href="{{ .Params.plus }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to googleplus">
-                                    <svg class="icon icon-google-plus">
+                                    <svg class="icon icon-google-plus" width="20" height="20">
                                         <use xlink:href="/svg/symbol-defs.svg#icon-google-plus2">
                                         </use>
                                     </svg>
@@ -53,7 +53,7 @@
                             {{- end }}
                             {{- if .Params.mastodonlink }}
                                 <a href="{{ .Params.mastodonlink }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to mastodon">
-                                    <svg class="icon icon-masto">
+                                    <svg class="icon icon-masto" width="20" height="20">
                                         <use xlink:href="/svg/symbol-defs.svg#icon-masto">
                                         </use>
                                     </svg>
@@ -61,7 +61,7 @@
                             {{- end }}
                             {{- if .Params.checkin }}
                                 <a href="{{ .Params.checkurl }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to swarm">
-                                    <svg class="icon icon-swarm">
+                                    <svg class="icon icon-swarm" width="20" height="20">
                                         <use xlink:href="/svg/symbol-defs.svg#icon-swarm">
                                         </use>
                                     </svg>
